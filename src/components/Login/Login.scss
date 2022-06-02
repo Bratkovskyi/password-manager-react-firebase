@@ -1,0 +1,22 @@
+.Login {
+  background: rgb(0 0 0 / 78%);
+  max-width: 350px;
+  height: 450px;
+  padding: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: auto;
+  margin-top: auto;
+  color: #fff;
+  box-shadow: -6px 9px 13px 3px #000000b0;
+  transition: 1.5s;
+  &:hover {
+    box-shadow: 0 0 0 0 #00000000;
+  }
+  p {
+    font-size: 28px;
+  }
+}
