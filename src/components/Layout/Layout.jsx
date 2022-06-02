@@ -8,6 +8,7 @@ import "./Layout.scss";
 
 const Layout = () => {
   const [user, loading, error] = useAuthState(auth);
+  console.log(user);
   if (loading) {
     return <Loader />;
   }

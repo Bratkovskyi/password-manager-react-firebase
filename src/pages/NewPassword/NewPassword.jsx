@@ -4,6 +4,7 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "../../API/Firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Button from "../../UI/Button/Button";
+import UserDisplay from "../../components/UserDisplay/UserDisplay";
 
 const NewPassword = () => {
   const [user] = useAuthState(auth);
@@ -26,6 +27,7 @@ const NewPassword = () => {
   };
   return (
     <div className="NewPassword">
+      <UserDisplay />
       <div className="container">
         <div className="groupInput">
           <input
