@@ -20,8 +20,7 @@ const NewPassword = () => {
       title: title,
       password: password,
       createdAt: serverTimestamp(),
-    });
-    alert("Password Has Been Added!");
+    }).then(alert("Password Has Been Added!"));
     setTitle("");
     setPassword("");
   };
