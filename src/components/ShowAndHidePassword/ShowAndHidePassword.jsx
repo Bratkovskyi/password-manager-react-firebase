@@ -26,6 +26,7 @@ function ShowAndHidePassword(props) {
     updateDoc(doc(db, `passswords-${user.displayName}`, id), {
       password: passwordInput,
     });
+    alert("The password has been changed!");
   }
 
   const removePassword = (id) => {

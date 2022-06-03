@@ -30,18 +30,26 @@ const NewPassword = () => {
       <UserDisplay />
       <div className="container">
         <div className="groupInput">
-          <input
-            onChange={(e) => setTitle(e.target.value)}
-            value={title}
-            type="text"
-            placeholder="ex: Facebook"
-          />
-          <input
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            type="text"
-            placeholder="ex: MyPassword"
-          />
+          <div>
+            <label htmlFor="inputData">Someweb.com</label>
+            <input
+              onChange={(e) => setTitle(e.target.value)}
+              value={title}
+              type="text"
+              placeholder="Someweb.com"
+              id="inputData"
+            />
+          </div>
+          <div>
+            <label for="inputData">Password</label>
+            <input
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+              type="text"
+              placeholder="Password"
+              id="inputData"
+            />
+          </div>
         </div>
 
         <Button onClick={sendPassword}>Add New Password</Button>

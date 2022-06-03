@@ -7,13 +7,9 @@ import "./Login.scss";
 const Login = () => {
   const singInWithGoogle = () => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
-      .then((re) => {
-        console.log(re);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    signInWithPopup(auth, provider).catch((err) => {
+      console.log(err);
+    });
   };
 
   return (
