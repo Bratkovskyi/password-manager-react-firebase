@@ -41,7 +41,7 @@ const NewPassword = () => {
             />
           </div>
           <div>
-            <label for="inputData">Password</label>
+            <label htmlFor="inputData">Password</label>
             <input
               onChange={(e) => setPassword(e.target.value)}
               value={password}
